@@ -38,17 +38,14 @@ const About = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Hum ek trusted <span className="font-semibold text-yellow-600">Tour & Travel service provider</span> hai jo aapki safar ko
-          memorable banata hai. Chahe aap family ke sath vacation plan kar rahe ho,
-          honeymoon trip, ya ek adventure tour – hum aapko best packages, comfort aur
-          complete travel solutions provide karte hai.
+          We are a trusted <span className="font-semibold text-yellow-600">Tour & Travel service provider</span> making your journey memorable. Whether you are planning a family vacation, honeymoon trip, or an adventure tour – we provide the best packages, comfort, and complete travel solutions.
         </p>
         <p
           className="text-gray-700 leading-relaxed max-w-3xl mx-auto mt-6"
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          Hum organise karte hai private Rajasthan tours jisme aap explore kar sakte hai Forts, Palaces, Deserts, Traditional Villages, colorful cattle fairs, sacred places, camel safaris, beautiful lakes, hill stations aur local people. Sand Dunes near Jaisalmer bahut popular hai travellers ke beech. Rajasthan ki traditional dance aur music visitors ko hamesha impress karti hai. Villagers ke hands made items bhi aapko surprise karenge.
+          We organize private Rajasthan tours where you can explore Forts, Palaces, Deserts, Traditional Villages, colorful cattle fairs, sacred places, camel safaris, beautiful lakes, hill stations, and meet the local people. Sand Dunes near Jaisalmer are very popular among travelers. Rajasthan’s traditional dance and music always impress visitors, and villagers’ handmade items will surprise you.
         </p>
       </div>
 
@@ -60,8 +57,7 @@ const About = () => {
         >
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission 🚀</h3>
           <p className="text-gray-700">
-            Humaari mission hai har ek traveller ko <span className="font-semibold text-pink-600">affordable, safe aur luxury travel experience</span> provide karna. Hum chahte hai ki aap duniya ke har kona explore karein bina kisi tension ke. 
-            Hum 10+ years ka experience rakhthe hai is field me, isliye hum jaante hai ki aapko kya dekhna hai aur kyun.
+            Our mission is to provide every traveler with an <span className="font-semibold text-pink-600">affordable, safe, and luxurious travel experience</span>. We want you to explore every corner of the world without any worries. With 10+ years of experience in this field, we know exactly what you want and why.
           </p>
         </div>
         <div
@@ -70,8 +66,7 @@ const About = () => {
         >
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Vision 🌟</h3>
           <p className="text-gray-700">
-            Humaara vision hai ki hum India ke top <span className="font-semibold text-pink-600">Tour & Travel brand</span> bane jo har ek tourist ka pehla choice ho. Hum business ko business ki tarah nahi chalate, balki family tradition ki tarah operate karte hai jo humare guests ko respect aur trust deta hai.
-            Aapko economical packages bhi provide karte hai aapke pocket convenience ke hisaab se.
+            Our vision is to become India’s top <span className="font-semibold text-pink-600">Tour & Travel brand</span>, making us the first choice for every tourist. We run our business like a family tradition, giving our guests respect and trust. We also provide economical packages according to your budget.
           </p>
         </div>
       </div>
@@ -85,7 +80,7 @@ const About = () => {
           Our Services
         </h2>
         <p className="text-gray-700 text-center max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
-          Aapka time aur money important hai, isliye hum har cheez plan karte hai bina aapko disturb kiye. Hum kuch ready packages offer karte hai jise aap choose, modify ya customize kar sakte hai.
+          Your time and money are important, so we plan everything without disturbing you. We offer ready packages that you can choose, modify, or customize.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {[
@@ -125,7 +120,7 @@ const About = () => {
               <FaGlobeAsia className="text-5xl text-pink-500 mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2 text-gray-800">Best Destinations</h4>
               <p className="text-gray-600">
-                Hum India ke top tourist destinations cover karte hai – Jaipur, Agra, Rajasthan, Himachal & more.
+                We cover India’s top tourist destinations – Jaipur, Agra, Rajasthan, Himachal & more.
               </p>
             </div>
             <div
@@ -136,7 +131,7 @@ const About = () => {
               <FaRegSmile className="text-5xl text-yellow-500 mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2 text-gray-800">Customer Satisfaction</h4>
               <p className="text-gray-600">
-                Hamari priority hai ki har customer apne trip se 100% satisfied ho.
+                Our priority is that every customer is 100% satisfied with their trip.
               </p>
             </div>
             <div
@@ -147,7 +142,7 @@ const About = () => {
               <FaBus className="text-5xl text-blue-500 mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2 text-gray-800">Comfortable Travel</h4>
               <p className="text-gray-600">
-                Luxury cars, AC buses, professional drivers – comfort hamara promise hai.
+                Luxury cars, AC buses, professional drivers – comfort is our promise.
               </p>
             </div>
             <div
@@ -158,7 +153,7 @@ const About = () => {
               <FaStar className="text-5xl text-green-500 mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2 text-gray-800">Affordable Packages</h4>
               <p className="text-gray-600">
-                Budget-friendly se lekar luxury packages tak – har type ke customer ke liye plan.
+                From budget-friendly to luxury packages – plans for every type of traveler.
               </p>
             </div>
           </div>
@@ -178,7 +173,7 @@ const About = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Aapki har ek journey hamare sath unforgettable hogi. Book your trip today aur banaye apne safar ko aur bhi khas!
+          Every journey with us will be unforgettable. Book your trip today and make your travel experience extra special!
         </p>
         <a
           href="/contact"
