@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FaGlobeAsia, FaRegSmile, FaBus, FaStar } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -175,13 +176,13 @@ const About = () => {
         >
           Every journey with us will be unforgettable. Book your trip today and make your travel experience extra special!
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           data-aos="zoom-in"
           className="bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 hover:opacity-90 text-white px-10 py-3 rounded-full font-semibold shadow-lg transition"
         >
           Contact Us
-        </a>
+        </Link>
       </div>
     </section>
   );

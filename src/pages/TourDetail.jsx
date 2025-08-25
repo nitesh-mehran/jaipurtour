@@ -72,7 +72,6 @@ const TourDetail = () => {
       </div>
 
       {/* Book Now Button */}
-      {/* Book Now Button */}
 <div className="text-center py-10">
   <Link to="/contact">
     <button className="w-[250px] md:w-[300px] py-4 bg-gradient-to-r from-blue-500 via-pink-500 to-yellow-500 text-white font-bold rounded-full shadow-xl animate-pulse hover:opacity-90 transition transform hover:scale-105">

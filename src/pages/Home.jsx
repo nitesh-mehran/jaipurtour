@@ -56,7 +56,6 @@ const sameDayTours = [
     subtitle: "Jaipur Sightseeing Tour",
     desc: "12+ Beautiful Jaipur Sightseeing. 1 day visit to Jaipur, which will include only the most popular and best sections of the city.",
     img: "/hawamahal.png",
-    price: "₹1200",
   },
   {
     id: "ajmer-pushkar",
@@ -64,7 +63,6 @@ const sameDayTours = [
     subtitle: "Same day Ajmer Pushkar",
     desc: "Same day Ajmer Pushkar sightseeing tour will take you to some of the most enchanting sites and monuments. Enjoy this one day trip to Ajmer and Pushkar with your family and friends.",
     img: "/ajmer.png",
-    price: "₹1500",
   },
   {
     id: "ranthambore-tour",
@@ -72,7 +70,6 @@ const sameDayTours = [
     subtitle: "Jaipur Ranthambore Same Day Tour",
     desc: "Full day visit to Ranthambore Wildlife Park by Car/Taxi from Jaipur. Book Jaipur to Ranthambore One Day Tour at lowest Price.",
     img: "/ranthambore.png",
-    price: "₹2500",
   },
   {
     id: "bhangarh-abhaneri-tour",
@@ -80,7 +77,6 @@ const sameDayTours = [
     subtitle: "Bhangarh Abhaneri Tour",
     desc: "Same Day Tour of Abhaneri & Bhangarh is the best tour for the traveler who want to explore heritage in lesser time.",
     img: "/bhangarh.png",
-    price: "₹1800",
   },
 
   {
@@ -89,7 +85,6 @@ const sameDayTours = [
     subtitle: "One Day Trip",
     desc: "Jaipur-Agra Same Day Tour Package covers many popular tourist attractions viz. Fatehpur Sikri, Taj Mahal, Agra Fort and much more.",
     img: "/agra.png",
-    price: "₹2800",
   },
   {
     id: "shekhawati-trip",
@@ -97,7 +92,6 @@ const sameDayTours = [
     subtitle: "Shekhawati Same Day Trip",
     desc: "Explore the rich heritage and frescoes of Shekhawati region with this one day tour.",
     img: "/shekhawati.png",
-    price: "₹2000",
   },
 ];
 
@@ -108,7 +102,6 @@ const rajasthanPackages = [
     subtitle: "Rajasthan Family Tour",
     desc: "Discover various Rajasthan Family tours at Tour My India and book Rajasthan Family holiday packages at best prices.",
     img: "/familytour.png",
-    price: "₹12000",
   },
   {
     id: "rajasthan-honeymoon-tour",
@@ -116,7 +109,6 @@ const rajasthanPackages = [
     subtitle: "Rajasthan Honeymoon Tour",
     desc: "Book romantic Rajasthan honeymoon tour packages with customized itinerary and luxury hotels at economical price.",
     img: "/honeymoon.png",
-    price: "₹15000",
   },
   {
     id: "rajasthan-adventure-tour",
@@ -124,7 +116,6 @@ const rajasthanPackages = [
     subtitle: "Rajasthan Adventure Tour",
     desc: "Rajasthan is a tourist destination which has the ability to surprise any tourist with its wide array of adventure tours.",
     img: "/adventuretour.png",
-    price: "₹13000",
   },
   {
     id: "rajasthan-wildlife-tour",
@@ -132,7 +123,6 @@ const rajasthanPackages = [
     subtitle: "Rajasthan Wildlife Tour",
     desc: "Rajasthan is one of the most popular wildlife destinations in India. Famous for celebrity tigers, migrant birds, dense flora and other wildlife tourism.",
     img: "/wildlife.png",
-    price: "₹14000",
   },
   {
     id: "golden-triangle-tour",
@@ -140,7 +130,6 @@ const rajasthanPackages = [
     subtitle: "Golden Triangle Tour",
     desc: "Enjoy a luxurious retreat on this holiday to Delhi, Jaipur and Agra. Enjoy a luxurious vacation on this holiday to Delhi, Agra and Jaipur.",
     img: "/goldentriangle.png",
-    price: "₹18000",
   },
   {
     id: "rajasthan-heritage-tour",
@@ -148,7 +137,6 @@ const rajasthanPackages = [
     subtitle: "Heritage Experience",
     desc: "Experience the traditional music, dance, and handicrafts of Rajasthan with this Heritage tour package.",
     img: "/Heritagetour.png",
-    price: "₹16000",
   },
 ];
 
@@ -264,9 +252,7 @@ const Home = () => {
                     alt={tour.title}
                     className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-3 left-3 bg-yellow-500 text-black px-3 py-1 rounded-full font-semibold shadow-lg">
-                    {tour.price}
-                  </span>
+                
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl md:text-2xl font-bold mb-1">
@@ -310,9 +296,7 @@ const Home = () => {
                     alt={pkg.title}
                     className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-3 left-3 bg-yellow-500 text-black px-3 py-1 rounded-full font-semibold shadow-lg">
-                    {pkg.price}
-                  </span>
+                  
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl md:text-2xl font-bold mb-1">
@@ -506,7 +490,7 @@ const Home = () => {
             .animate-scroll {
               display: flex;
               gap: 2rem;
-              animation: scroll 30s linear infinite;
+              animation: scroll 15s linear infinite;
             }
           `}
         </style>

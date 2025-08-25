@@ -9,10 +9,12 @@ import TaxiService from "./pages/TaxiService";
 import TourDetail from "./pages/TourDetail";
 import SameDayTourDetail from "./pages/SameDayTourDetail";
 import ScrollToTop from "./pages/ScrollToTop";
+import MetaPage from "./components/MetaPage";
 
 const App = () => {
   return ( 
     <Router>
+      <MetaPage />
       <ScrollToTop />
       <Navbar />
       <Routes>

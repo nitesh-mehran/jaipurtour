@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
@@ -40,12 +41,12 @@ const Footer = () => {
           <ul className="space-y-3">
             {usefulLinks.map((link, idx) => (
               <li key={idx}>
-                <a
-                  href={link.path}
+                <Link
+                  to={link.path}
                   className="hover:text-yellow-400 transition-all duration-300"
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -59,12 +60,12 @@ const Footer = () => {
           <ul className="space-y-3">
             {sameDayTours.map((tour, idx) => (
               <li key={idx}>
-                <a
-                  href={tour.path}
+                <Link
+                  to={tour.path}
                   className="hover:text-yellow-400 transition-all duration-300"
                 >
                   {tour.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -78,12 +79,12 @@ const Footer = () => {
           <ul className="space-y-3">
             {rajasthanPackages.map((pkg, idx) => (
               <li key={idx}>
-                <a
-                  href={pkg.path}
+                <Link
+                  to={pkg.path}
                   className="hover:text-yellow-400 transition-all duration-300"
                 >
                   {pkg.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
