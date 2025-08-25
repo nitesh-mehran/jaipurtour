@@ -99,7 +99,7 @@ const Footer = () => {
             🏨 Hotel Royal Rajwada, Amer Jaipur - 302028
           </p>
           <p className="text-gray-300 mb-3">📞 +91-8005937270</p>
-          <p className="text-gray-300 mb-3">✉️ info@jaipurtourtrip.in</p>
+          <p className="text-gray-300 mb-3">✉️ jaipurtourtrip27@gmail.com</p>
           <div className="flex items-center gap-4 mt-4">
             <a
               href="https://wa.me/918005937270"

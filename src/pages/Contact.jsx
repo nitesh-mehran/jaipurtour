@@ -77,7 +77,7 @@ const Contact = () => {
         <div className="bg-white p-6 sm:p-8 rounded-2xl shadow hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
           <FaEnvelope className="text-3xl sm:text-4xl text-green-500 mx-auto mb-3" />
           <h3 className="text-lg sm:text-xl font-semibold mb-2">Email Us</h3>
-          <p className="text-gray-600 break-words">info@jaipurtourtrip.in</p>
+          <p className="text-gray-600 break-words">jaipurtourtrip27@gmail.com</p>
         </div>
         <div className="bg-white p-6 sm:p-8 rounded-2xl shadow hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
           <FaMapMarkerAlt className="text-3xl sm:text-4xl text-indigo-500 mx-auto mb-3" />
