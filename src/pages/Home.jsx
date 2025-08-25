@@ -13,6 +13,7 @@ import {
   FaGift,
   FaHeadset,
 } from "react-icons/fa";
+import JaipurTestimonials from "../components/JaipurTestimonials";
 
 const sliderImages = ["/aamerfort.png", "/hawamahal.png", "/jalmahal.png"];
 
@@ -393,108 +394,7 @@ const Home = () => {
       </section>
 
       {/* Reviews / Testimonials */}
-      <section className="py-16 md:py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2
-            className="text-3xl md:text-5xl font-extrabold text-center mb-12"
-            data-aos="fade-up"
-          >
-            What Our Travelers Say
-          </h2>
-
-          <div className="overflow-hidden relative">
-            <div className="flex animate-scroll gap-8">
-              {[
-                {
-                  name: "Rahul Sharma",
-                  img: "/testimonial6.jpg",
-                  rating: 5,
-                  review:
-                    "Amazing experience! Jaipur tour was perfectly organized. Highly recommend to everyone.",
-                },
-                {
-                  name: "Anjali Verma",
-                  img: "/testimonial6.jpg",
-                  rating: 4,
-                  review:
-                    "Great service and comfortable taxis. Hotel arrangements were top-notch!",
-                },
-                {
-                  name: "Ramesh Singh",
-                  img: "/testimonial6.jpg",
-                  rating: 5,
-                  review:
-                    "Rajasthan tour packages were perfect. Fun-filled & memorable trip!",
-                },
-                {
-                  name: "Priya Kaur",
-                  img: "/testimonial6.jpg",
-                  rating: 4,
-                  review:
-                    "24/7 support made our trip hassle-free. Excellent assistance!",
-                },
-                {
-                  name: "Vikram Joshi",
-                  img: "/testimonial6.jpg",
-                  rating: 5,
-                  review:
-                    "Highly satisfied! Guides were professional and knowledgeable.",
-                },
-                {
-                  name: "Sneha Gupta",
-                  img: "/testimonial6.jpg",
-                  rating: 5,
-                  review:
-                    "Loved the Jaipur sightseeing package. Everything was well-planned.",
-                },
-              ].map((test, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white rounded-2xl shadow-xl p-6 md:p-8 min-w-[300px] flex flex-col items-center text-center"
-                >
-                  <img
-                    src={test.img}
-                    alt={test.name}
-                    className="w-20 h-20 rounded-full object-cover mb-4 border-2 border-yellow-500"
-                  />
-                  <h4 className="text-lg font-bold mb-1">{test.name}</h4>
-                  <div className="flex mb-2">
-                    {Array(test.rating)
-                      .fill(0)
-                      .map((_, i) => (
-                        <svg
-                          key={i}
-                          className="w-5 h-5 text-yellow-500"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.947a1 1 0 00.95.69h4.148c.969 0 1.371 1.24.588 1.81l-3.36 2.44a1 1 0 00-.364 1.118l1.286 3.947c.3.921-.755 1.688-1.54 1.118l-3.36-2.44a1 1 0 00-1.175 0l-3.36 2.44c-.784.57-1.838-.197-1.539-1.118l1.286-3.947a1 1 0 00-.364-1.118l-3.36-2.44c-.784-.57-.38-1.81.588-1.81h4.148a1 1 0 00.951-.69l1.286-3.947z" />
-                        </svg>
-                      ))}
-                  </div>
-                  <p className="text-gray-700 text-sm md:text-md">
-                    {test.review}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <style>
-          {`
-            @keyframes scroll {
-              0% { transform: translateX(0%); }
-              100% { transform: translateX(-50%); }
-            }
-            .animate-scroll {
-              display: flex;
-              gap: 2rem;
-              animation: scroll 15s linear infinite;
-            }
-          `}
-        </style>
-      </section>
+      <JaipurTestimonials />
     </div>
   );
 };
