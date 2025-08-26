@@ -10,12 +10,18 @@ const About = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-b from-pink-50 via-yellow-50 to-blue-50 text-gray-800 font-sans">
+    <section className="bg-gradient-to-b from-pink-50 via-yellow-50 to-blue-50 text-gray-800 font-sans overflow-x-hidden">
       {/* Hero Section */}
       <div
-        className="relative bg-cover bg-center h-[40vh]  md:h-[50vh] shadow-lg"
-        style={{ backgroundImage: "url('/images/about-bg.jpg')" }}
+        className="relative bg-cover bg-center h-[40vh] md:h-[50vh] shadow-lg overflow-hidden"
+        // Lazy load hero image using <img> instead of background
       >
+        <img
+          src="/images/about-bg.jpg"
+          alt="About Background"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center px-4 text-center">
           <h1
             className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg tracking-wide"
@@ -27,7 +33,7 @@ const About = () => {
       </div>
 
       {/* Intro Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16 text-center">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 py-10 sm:py-16 text-center">
         <h2
           className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
           data-aos="fade-up"
@@ -62,7 +68,7 @@ const About = () => {
       </div>
 
       {/* Mission & Vision */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 py-10 sm:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
         <div
           className="bg-gradient-to-tr from-yellow-100 to-yellow-50 p-6 sm:p-8 rounded-2xl shadow-md hover:shadow-2xl transition"
           data-aos="fade-right"
@@ -100,7 +106,7 @@ const About = () => {
       </div>
 
       {/* Services */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 py-12 sm:py-16">
         <h2
           className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 sm:mb-12 text-center"
           data-aos="fade-up"
@@ -140,8 +146,8 @@ const About = () => {
       </div>
 
       {/* Why Choose Us */}
-      <div className="bg-gradient-to-r from-yellow-50 via-pink-50 to-blue-50 py-12 sm:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <div className="bg-gradient-to-r from-yellow-50 via-pink-50 to-blue-50 py-12 sm:py-16 overflow-x-hidden">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 text-center">
           <h2
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 sm:mb-12"
             data-aos="fade-up"
@@ -151,22 +157,30 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10">
             {[
               {
-                icon: <FaGlobeAsia className="text-4xl sm:text-5xl text-pink-500 mx-auto mb-3" />,
+                icon: (
+                  <FaGlobeAsia className="text-4xl sm:text-5xl text-pink-500 mx-auto mb-3" />
+                ),
                 title: "Best Destinations",
                 desc: "We cover India’s top tourist destinations – Jaipur, Agra, Rajasthan, Himachal & more.",
               },
               {
-                icon: <FaRegSmile className="text-4xl sm:text-5xl text-yellow-500 mx-auto mb-3" />,
+                icon: (
+                  <FaRegSmile className="text-4xl sm:text-5xl text-yellow-500 mx-auto mb-3" />
+                ),
                 title: "Customer Satisfaction",
                 desc: "Our priority is that every customer is 100% satisfied with their trip.",
               },
               {
-                icon: <FaBus className="text-4xl sm:text-5xl text-blue-500 mx-auto mb-3" />,
+                icon: (
+                  <FaBus className="text-4xl sm:text-5xl text-blue-500 mx-auto mb-3" />
+                ),
                 title: "Comfortable Travel",
                 desc: "Luxury cars, AC buses, professional drivers – comfort is our promise.",
               },
               {
-                icon: <FaStar className="text-4xl sm:text-5xl text-green-500 mx-auto mb-3" />,
+                icon: (
+                  <FaStar className="text-4xl sm:text-5xl text-green-500 mx-auto mb-3" />
+                ),
                 title: "Affordable Packages",
                 desc: "From budget-friendly to luxury packages – plans for every type of traveler.",
               },
@@ -189,7 +203,7 @@ const About = () => {
       </div>
 
       {/* Closing Note */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
+      <div className="max-w-5xl mx-auto px-3 sm:px-6 py-12 sm:py-16 text-center">
         <h2
           className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
           data-aos="fade-up"

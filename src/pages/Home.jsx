@@ -160,7 +160,7 @@ const Home = () => {
 
   return (
     <div className="font-sans bg-gray-50">
-      {/* Hero Slider */}
+      {/* Hero Slider (no lazy, because first visible) */}
       <section className="relative w-full h-[60vh] md:h-screen overflow-hidden">
         <Slider {...sliderSettings}>
           {sliderImages.map((img, idx) => (
@@ -195,42 +195,43 @@ const Home = () => {
 
       {/* Welcome Section */}
       <section className="py-16 md:py-20 bg-white">
-      <div
-        className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center gap-10"
-        data-aos="fade-up"
-      >
-        {/* Left Content */}
-        <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
-            Welcome Jaipur Tour Trip
-          </h2>
+        <div
+          className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center gap-10"
+          data-aos="fade-up"
+        >
+          {/* Left Content */}
+          <div className="md:w-1/2 text-center md:text-left">
+            <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
+              Welcome Jaipur Tour Trip
+            </h2>
 
-          <ul className="text-gray-700 text-md md:text-lg leading-relaxed mb-6 space-y-2">
-            <li>🏰 Explore Historic Forts & Palaces</li>
-            <li>🛍️ Vibrant Local Markets</li>
-            <li>🐪 Desert & Camel Safari Experiences</li>
-            <li>🎨 Traditional Villages & Handicrafts</li>
-          </ul>
+            <ul className="text-gray-700 text-md md:text-lg leading-relaxed mb-6 space-y-2">
+              <li>🏰 Explore Historic Forts & Palaces</li>
+              <li>🛍️ Vibrant Local Markets</li>
+              <li>🐪 Desert & Camel Safari Experiences</li>
+              <li>🎨 Traditional Villages & Handicrafts</li>
+            </ul>
 
-          {/* Direct Link styled as Button */}
-          <Link
-            to="/about"
-            className="inline-block px-6 py-3 bg-yellow-500 text-black font-bold rounded-xl hover:bg-yellow-400 transition transform hover:scale-105 shadow-lg"
-          >
-            Read More
-          </Link>
+            {/* Direct Link styled as Button */}
+            <Link
+              to="/about"
+              className="inline-block px-6 py-3 bg-yellow-500 text-black font-bold rounded-xl hover:bg-yellow-400 transition transform hover:scale-105 shadow-lg"
+            >
+              Read More
+            </Link>
+          </div>
+
+          {/* Right Image */}
+          <div className="md:w-1/2 overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+            <img
+              src="/jaipurwelcome.png"
+              alt="Welcome Jaipur"
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
-
-        {/* Right Image */}
-        <div className="md:w-1/2 overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
-          <img
-            src="/jaipurwelcome.png"
-            alt="Welcome Jaipur"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
 
       {/* Same Day Tours */}
       <section className="py-16 md:py-20 bg-gray-50">
@@ -251,9 +252,9 @@ const Home = () => {
                   <img
                     src={tour.img}
                     alt={tour.title}
+                    loading="lazy"
                     className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl md:text-2xl font-bold mb-1">
@@ -295,9 +296,9 @@ const Home = () => {
                   <img
                     src={pkg.img}
                     alt={pkg.title}
-                    className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    className="w-full h-56 object-cover  group-hover:scale-105 transition-transform duration-500"
                   />
-                  
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl md:text-2xl font-bold mb-1">
@@ -330,16 +331,14 @@ const Home = () => {
             <img
               src="/taxi.png"
               alt="Taxi Booking"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center text-white px-4">
               <h3 className="text-3xl md:text-4xl font-extrabold mb-3 drop-shadow-lg">
                 Book a Taxi
               </h3>
-              <p className="text-md md:text-lg mb-4 drop-shadow-md">
-                Reliable taxi service for safe and convenient travel around
-                Jaipur anytime.
-              </p>
+             
               <Link to="/taxi-services">
                 <button className="px-6 py-3 md:px-8 md:py-4 bg-yellow-500 text-black font-bold rounded-xl hover:bg-yellow-400 transition transform hover:scale-102 shadow-2xl">
                   More Details
