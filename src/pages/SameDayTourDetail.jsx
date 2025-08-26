@@ -25,7 +25,7 @@ const SameDayTourDetail = () => {
     <section className="font-sans text-gray-800">
       {/* Hero Image */}
       <div
-        className="relative w-full h-[50vh] md:h-[60vh] bg-cover bg-center rounded-b-3xl shadow-lg"
+        className="relative w-full h-[40vh] md:h-[50vh] bg-cover bg-center rounded-b-3xl shadow-lg"
         style={{ backgroundImage: `url(${tour.img})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/50 flex items-center justify-center rounded-b-3xl px-4">

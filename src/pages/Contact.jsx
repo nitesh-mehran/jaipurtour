@@ -53,10 +53,10 @@ const Contact = () => {
       <Toaster position="top-right" />
       {/* Hero Section */}
       <div
-        className="relative bg-cover bg-center h-[40vh] md:h-[50vh] rounded-b-3xl shadow-lg"
+        className="relative bg-cover bg-center h-[40vh] md:h-[50vh] shadow-lg"
         style={{ backgroundImage: "url('/images/contact-bg.png')" }}
       >
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center rounded-b-3xl px-4">
+        <div className="absolute inset-0 bg-black/50 flex items-center justify-center  px-4">
           <h1
             className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white text-center drop-shadow-lg tracking-wide"
             data-aos="zoom-in"

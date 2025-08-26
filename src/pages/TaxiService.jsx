@@ -40,10 +40,10 @@ const TaxiService = () => {
     <section className="bg-gray-50 text-gray-800 font-sans">
       {/* Hero Section */}
       <div
-        className="relative bg-cover bg-center h-[50vh] flex items-center justify-center rounded-b-3xl shadow-lg"
+        className="relative w-full h-[40vh] md:h-[50vh] bg-cover bg-center flex items-center justify-center shadow-lg"
         style={{ backgroundImage: "url('/images/taxi-bg.png')" }}
       >
-        <div className="absolute inset-0 bg-black/50 rounded-b-3xl"></div>
+        <div className="absolute inset-0 bg-black/50 "></div>
         <h1
           className="relative text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg text-center"
           data-aos="zoom-in"
