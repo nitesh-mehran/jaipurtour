@@ -1,54 +1,144 @@
+// src/components/JaipurTestimonials.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import { FaStar } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const testimonials = [
   {
     name: "Rahul Sharma",
     review:
-      "Amazing experience! Jaipur trip was perfectly organized, from hotel check-ins to sightseeing tours. Our family loved every moment.",
+      "Our Jaipur trip with this tour company was amazing! The guide was knowledgeable and friendly. We visited every major fort and palace comfortably.",
+    img: "https://i.pravatar.cc/100?img=1",
+    rating: 5,
   },
   {
-    name: "Anjali Mehta",
+    name: "Priya Verma",
     review:
-      "The Pink City tour was magical. The forts and palaces looked stunning, and our guide explained everything beautifully.",
+      "Loved the Pink City tour! Hotels were top-notch, and the itinerary was perfectly organized. Highly recommended for families.",
+    img: "https://i.pravatar.cc/100?img=2",
+    rating: 5,
   },
   {
-    name: "Vikram Patel",
+    name: "Arjun Mehta",
     review:
-      "Very smooth arrangements. Desert safari in Jaisalmer was thrilling. Only wished the hotel check-in was a bit faster.",
+      "Camel ride at Amber Fort and light show at Nahargarh were highlights. Everything went smoothly, very professional service.",
+    img: "https://i.pravatar.cc/100?img=3",
+    rating: 5,
   },
- 
+  {
+    name: "Sneha Kapoor",
+    review:
+      "The city tour was insightful and fun. Loved the mix of history, culture, and shopping experiences. Definitely coming back!",
+    img: "https://i.pravatar.cc/100?img=4",
+    rating: 5,
+  },
+  {
+    name: "Aman Gupta",
+    review:
+      "Fantastic experience! The guide explained the history in an engaging way and the sightseeing was very well-planned.",
+    img: "https://i.pravatar.cc/100?img=5",
+    rating: 5,
+  },
+  {
+    name: "Nisha Malhotra",
+    review:
+      "Visited Jaipur for a weekend getaway. Loved the hospitality and arrangements. Every detail was taken care of. Stress-free trip!",
+    img: "https://i.pravatar.cc/100?img=6",
+    rating: 5,
+  },
+  {
+    name: "Rohit Khanna",
+    review:
+      "The tour was excellent! From Hawa Mahal to City Palace, every place was covered and explained properly. Very happy with the service.",
+    img: "https://i.pravatar.cc/100?img=7",
+    rating: 5,
+  },
+  {
+    name: "Ananya Singh",
+    review:
+      "Family trip to Jaipur made unforgettable by this team. Comfortable vehicles, friendly guides, and smooth schedule.",
+    img: "https://i.pravatar.cc/100?img=8",
+    rating: 5,
+  },
+  {
+    name: "Kunal Bansal",
+    review:
+      "Highly professional tour service. Pick-up and drop arrangements were perfect, and every attraction was well-timed.",
+    img: "https://i.pravatar.cc/100?img=9",
+    rating: 5,
+  },
+  {
+    name: "Shreya Patel",
+    review:
+      "The Jaipur trip was magical! The guide gave great insights about local culture, and the photo spots were amazing.",
+    img: "https://i.pravatar.cc/100?img=10",
+    rating: 5,
+  },
+  {
+    name: "Varun Sethi",
+    review:
+      "Excellent tour package. Comfortable stay, knowledgeable guide, and all sightseeing spots included. Worth every penny!",
+    img: "https://i.pravatar.cc/100?img=11",
+    rating: 5,
+  },
+  {
+    name: "Megha Jain",
+    review:
+      "First time visiting Jaipur and everything was perfect. Forts, markets, and local cuisine – all managed very well. Truly memorable trip!",
+    img: "/testimonial6.jpg",
+    rating: 5,
+  },
 ];
 
 const JaipurTestimonials = () => {
   return (
-    <section className="w-full py-16 px-6 bg-gradient-to-b from-yellow-50 to-orange-100">
+    <section className="w-full py-12 px-6 ">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">
-        🏰 What Our Travelers Say
+        ❤️ What Our Travelers Say
       </h2>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <Swiper
+        modules={[Autoplay, Pagination, Navigation]}
+        spaceBetween={20}
+        slidesPerView={1}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        navigation
+        breakpoints={{
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="px-4"
+      >
         {testimonials.map((t, index) => (
-          <motion.div
-            key={index}
-            className="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            whileHover={{ scale: 1.02 }}
-          >
-            {/* Review Text */}
-            <p className="italic text-gray-700 text-lg leading-relaxed mb-6">
-              "{t.review}"
-            </p>
+          <SwiperSlide key={index}>
+            <motion.div
+              className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center h-full transition-transform duration-300 hover:scale-105"
+            >
+              <img
+                src={t.img}
+                alt={t.name}
+                className="w-16 h-16 rounded-full object-cover mb-4 border-2 border-yellow-300"
+              />
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900">{t.name}</h3>
 
-            {/* Traveler Name */}
-            <h3 className="text-xl font-semibold text-gray-900 text-right">
-              – {t.name}
-            </h3>
-          </motion.div>
+              <div className="flex justify-center my-2">
+                {[...Array(t.rating)].map((_, i) => (
+                  <FaStar key={i} className="text-yellow-500" />
+                ))}
+              </div>
+
+              <p className="italic text-gray-600 mt-2">{t.review}</p>
+            </motion.div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 };

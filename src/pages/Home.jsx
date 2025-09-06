@@ -194,7 +194,7 @@ const Home = () => {
       </section>
 
       {/* Welcome Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 ">
         <div
           className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center gap-10"
           data-aos="fade-up"
@@ -234,7 +234,7 @@ const Home = () => {
       </section>
 
       {/* Same Day Tours */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-20 ">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2
             className="text-3xl md:text-5xl font-extrabold text-center mb-12"
@@ -278,7 +278,7 @@ const Home = () => {
       </section>
 
       {/* Rajasthan Packages */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 ">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2
             className="text-3xl md:text-5xl font-extrabold text-center mb-12"
@@ -322,7 +322,7 @@ const Home = () => {
       </section>
 
       {/* Taxi Booking */}
-      <section className="py-16 md:py-20 bg-gray-100">
+      <section className="py-16 md:py-20 ">
         <div
           className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center gap-10"
           data-aos="fade-up"
@@ -365,7 +365,7 @@ const Home = () => {
       </section>
 
       {/* Services */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2
             className="text-3xl md:text-5xl font-extrabold text-center mb-12"
